@@ -1,0 +1,2891 @@
+{
+  "id": 161,
+  "network": "Custom",
+  "deployments": {
+    "0x5a0Eb52427b1dD9c38469Fb9D984bAaa150C3047": {
+      "date": "2023-01-23T07:24:48.864Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0xaF1d4622cc500feE8aa65f0410A84b45A4f9e708",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2711,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2714,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2717,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "usdToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2637"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2637": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0xF702763Fbe60Cc8aaA6a82c5BC680E36487BdfcE": {
+      "date": "2023-01-22T09:31:03.710Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x15C18e6d0e751F71B0D61Fb887d4d37f6A1993C3",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 1998,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2001,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8": {
+      "date": "2023-01-23T11:28:08.251Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x65e55863B9FD4315FAE9C828F466C64A00c9f39C",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0xE1FaC4DC846e0f096Ec3b9B59960084340514290": {
+      "date": "2023-01-23T07:53:00.331Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0xBd44CAd30Eefd21d2e8B32341a8B6E0A5ab4Eea9",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2711,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2714,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2717,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "usdToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2637"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2637": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x4075f8641df423d97B4056C8cC5705a319094444": {
+      "date": "2023-01-23T08:03:39.123Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x8A55a5C0d43E2701EF5D0798254E0e45cBD1eF1D",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2711,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2714,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2717,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "usdToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2637"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2637": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x24F6335afDA2A27D949DDAaFf92535aE3a4e029a": {
+      "date": "2023-01-23T08:56:49.770Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x3a4f4a43FA76A75Ee9354E903416f470A4Ec88a9",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "usdToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x026c45552F9f43c839B023B864175690752b3F96": {
+      "date": "2023-01-23T10:03:14.200Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x07e68a6D6d476f38C620c77929276b8FDFe363a3",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0xB19af0961b23fb9a19C3077226443e97d182aa91": {
+      "date": "2023-01-23T10:41:44.085Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0xcf5498Bbf2BaFB7687E9eb0aC34C328e44C72464",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0xCD89bE064609736C7f435D95E5AC412867C3E385": {
+      "date": "2023-01-23T12:26:30.200Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x61016e3301cC9ccA1e1963E9113aD0D368a58454",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x9d7da49dA3638bb455ae60aDE258cb99F9F44CEB": {
+      "date": "2023-01-23T12:30:25.911Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x7f783d5Cfa5C9c240eba7BAe226f296C88dA1e63",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x459F845d4f126cb27033052b08f36A7AffAF67b6": {
+      "date": "2023-01-23T12:39:34.734Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x4D1a5Ac3f14ab99D6AA536199F8C85DBB5fCe8e8",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x624E54F4433dC22763401269BFF320A7c6B652AB": {
+      "date": "2023-01-23T13:21:38.069Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0xeb548539f612EC7e040EdaE8464c950A88F99c89",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x7Cf478dfe2480B5B698CA2FFDBD3B8E182eEB9C3": {
+      "date": "2023-01-23T13:33:05.339Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x56281ac4fc19CC7EAFf09F115F020dBF114314e1",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0x6574DfF660c6e686016a7819feeFf4a26e5c482b": {
+      "date": "2023-01-23T13:55:07.930Z",
+      "contractName": "TogoToken",
+      "fork": "london",
+      "implementationAddress": "0x8aaC731267E4C34E1107Ca84a6c878298aEcF4f5",
+      "layout": {
+        "storage": [
+          {
+            "astId": 573,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8"
+          },
+          {
+            "astId": 576,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 1911,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 890,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)"
+          },
+          {
+            "astId": 896,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+          },
+          {
+            "astId": 898,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 900,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 902,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 1482,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage"
+          },
+          {
+            "astId": 56,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "_owner",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address"
+          },
+          {
+            "astId": 176,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage"
+          },
+          {
+            "astId": 555,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 870,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage"
+          },
+          {
+            "astId": 2725,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "fixedValue",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 2728,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(AggregatorV3Interface)45"
+          },
+          {
+            "astId": 2731,
+            "contract": "TogoToken.sol:TogoToken",
+            "label": "linkToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_contract(IERC20)2050"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "encoding": "inplace",
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)45_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)49_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "base": "t_uint256",
+            "encoding": "inplace",
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "encoding": "inplace",
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "encoding": "inplace",
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2050": {
+            "encoding": "inplace",
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32",
+            "value": "t_mapping(t_address,t_uint256)"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "encoding": "mapping",
+            "key": "t_address",
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32",
+            "value": "t_uint256"
+          },
+          "t_string_storage": {
+            "encoding": "bytes",
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "encoding": "inplace",
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "encoding": "inplace",
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
